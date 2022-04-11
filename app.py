@@ -20,5 +20,8 @@ def loginPage():
     form = Login()
     return render_template('login.html', form = form)
 
+@app.route('/blog')
+def blogpage():
+    return render_template('blog.html')
 if __name__ == '__main__':
     app.run(debug=True)
