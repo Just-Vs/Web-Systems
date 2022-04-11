@@ -1,25 +1,24 @@
 {% extends "template.html" %}
 {% block content %}
-<form class="form-class" action="index.html" method="POST">
-  {{ form.hidden_tag() }}
-  <div class="form-data">
-    {{ form.username.label(class="form-control-label") }}
-    {{ form.username(class="form-control form-control-lg") }}
-  </div>
-  <div class="form-data">
-    {{ form.email.label(class="form-control-label") }}
-    {{ form.email(class="form-control form-control-lg") }}
-  </div>
-  <div class="form-data">
-    {{ form.password.label(class="form-control-label") }}
-    {{ form.password(class="form-control form-control-lg") }}
-  </div>
-  <div class="form-data">
-    {{ form.confirm_password.label(class="form-control-label") }}
-    {{ form.confirm_password(class="form-control form-control-lg") }}
-  </div>
-  <div class="form-group">
-    {{ form.submit(class="btn btn-outline-info") }}
-  </div>
-</form>
+<div class="cnt">
+  <form class="form-class" action="index.html" method="POST">
+    <h3 class="text-info">Register</h3>
+    {{ form.hidden_tag() }}
+    <div class="form-data">
+      {{ form.username(class="box", placeholder="Username") }}
+    </div>
+    <div class="form-data">
+      {{ form.email(class="box", placeholder="Email") }}
+    </div>
+    <div class="form-data">
+      {{ form.password(class="box", placeholder="Password") }}
+    </div>
+    <div class="form-data">
+      {{ form.confirm_password(class="box", placeholder="Confirm Password") }}
+    </div>
+    <div class="form-group">
+      {{ form.submit(class="btn btn-dark") }}
+    </div>
+  </form>
+</div>
 {% endblock content %}

@@ -1,21 +1,19 @@
 {% extends "template.html" %}
 {% block content %}
-<form class="form-class" action="index.html" method="POST">
-  {{ form.hidden_tag() }}
-  <div class="form-data">
-    {{ form.username.label(class="form-control-label") }}
-    {{ form.username(class="form-control form-control-lg") }}
-  </div>
-  <div class="form-data">
-    {{ form.password.label(class="form-control-label") }}
-    {{ form.password(class="form-control form-control-lg") }}
-  </div>
-  <div class="sml">
-        {{ form.remember(class="btn btn-outline-info") }}
-  </div>
-  <div class="form-group">
-    {{ form.submit(class="btn btn-outline-info") }}
-  </div>
+<<div class="cnt">
+  <h3 class="text-info">Login</h3>
+  <form class="form-class" action="index.html" method="POST">
+    {{ form.hidden_tag() }}
+    <div class="form-data">
+      {{ form.username(class="box", placeholder="username") }}
+    </div>
+    <div class="form-data">
+      {{ form.password(class="box", placeholder="Confirm Password") }}
+    </div>
+    <div class="form-group">
+      {{ form.submit(class="btn btn-dark") }}
+    </div>
+  </form>
+</div>
 
-</form>
 {% endblock content %}
