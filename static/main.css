@@ -2,9 +2,14 @@
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+
+}
+body{
+	background:#202124;
 }
 .nav{
 	background: #1E1F25;
+	border-bottom: 1px solid white;
 }
 .nav a{
   text-transform: uppercase;
@@ -49,12 +54,12 @@ a{
   width: 30px;
   display: block;
 }
-.dropbtn div{}
+.dropbtn div{
+
+}
 .one{
   width: 30px;
   background-color: white;
-
-
 }
 .two{
   width: 20px;
@@ -141,7 +146,8 @@ a{
 .himg{
 	width:100%;
 	border-radius:6px;
-	margin: 2px
+	margin: 5px;
+	box-shadow: 5px 10px 20px 10px black;
 }
 .img-div{
 	position: relative;
@@ -159,11 +165,56 @@ a{
 .img-div:hover .name{
 	display: block;
 }
+.img-div:hover .himg{
+	box-shadow: 5px 10px 50px 10px black;
+}
 .form-class{
 
 }
+
 .cnt{
 	margin: auto;
 	width: 40%;
 	padding-top: 20%;
+}
+div.bloge{
+	border: 1px solid white;
+	background: #202124;
+	border-radius: 10px;
+	margin: 5px;
+	color: white;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 155px
+}
+div.bloge:hover img{
+	display: none;
+}
+div.bloge:hover h1{
+	display: none;
+}
+div.bloge:hover h2{
+	display: none;
+}
+.bloge h1{
+	margin: 13px;
+	float: left;
+}
+.bloge h2{
+	float:right;
+	padding: 0 10px;
+}
+.bloge img{
+	height: 150px;
+	padding: 1px;
+	float:left;
+}
+.bloge h1{
+	display: contents;
+	padding: 0 10px;
+}
+p.paras{
+	text-overflow: ellipsis;
+	padding: 5px 20px;
+	line-height: 1.1;
 }
