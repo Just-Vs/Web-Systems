@@ -1,0 +1,24 @@
+{% extends "template.html" %}
+{% block content %}
+
+
+<img src="/static/user.png" alt="user" class="useracc">
+<h2 class="ach">Username</h2>
+<div class="minav h2">
+  <a href="{{ url_for('accountpage') }}">Posts</a>
+  <a class="active">Selling</a>
+</div>
+
+<div class="accstore">
+  <div class="storep">
+    <img src="/static/tree-736885__480.jpeg" alt="tree">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a class="pr">price</a>
+  </div>
+  <div class="storep">
+    <img src="/static/tree-736885__480.jpeg" alt="tree">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a class="pr">price</a>
+  </div>
+</div>
+{% endblock content %}

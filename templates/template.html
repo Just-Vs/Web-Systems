@@ -12,14 +12,15 @@
   <ul>
   	<li><a href="{{ url_for('home') }}">Home</a></li>
   	<li><a href="{{url_for('blogpage')}}">Blog</a></li>
-  	<li><a href="#">Store</a></li>
+  	<li><a href="{{url_for('storepage')}}">Store</a></li>
 
   </ul>
   <div class="dropdown" style="float:right;">
   <button class="dropbtn"><div class="two"></div><div class="one"></div><div class="three"></button>
   <div class="dropdown-content">
-    <a class="right" href="{{ url_for('loginPage') }}">Log In</a>
-    <a class="right" href="{{ url_for('registerPage')}}">Register</a>
+    <a class="right" href="{{ url_for('loginpage') }}">Log In</a>
+    <a class="right" href="{{ url_for('registerpage')}}">Register</a>
+		<a class="right" href="{{ url_for('accountpage')}}">Account</a>
   </div>
 </div>
 

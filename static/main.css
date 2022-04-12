@@ -6,6 +6,7 @@
 }
 body{
 	background:#202124;
+	color: white;
 }
 .nav{
 	background: #1E1F25;
@@ -176,13 +177,25 @@ a{
 	margin: auto;
 	width: 40%;
 	padding-top: 20%;
+
+}
+.dv{
+	border: 1px solid white;
+	padding: 5px;
+	border-radius: 10px;
+}
+.text-info{
+	border-bottom: 1px solid white;
+}
+.bt{
+	margin: 4px 2px 0 2px;
 }
 div.bloge{
 	border: 1px solid white;
 	background: #202124;
 	border-radius: 10px;
 	margin: 5px;
-	color: white;
+
 	overflow: hidden;
 	text-overflow: ellipsis;
 	height: 155px
@@ -195,6 +208,9 @@ div.bloge:hover h1{
 }
 div.bloge:hover h2{
 	display: none;
+}
+div.bloge:hover p{
+	text-align: center;
 }
 .bloge h1{
 	margin: 13px;
@@ -214,7 +230,52 @@ div.bloge:hover h2{
 	padding: 0 10px;
 }
 p.paras{
-	text-overflow: ellipsis;
 	padding: 5px 20px;
 	line-height: 1.1;
+}
+div .storep{
+	width: 200px;
+	height: 400px;
+	border: 1px solid white;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	float:left;
+	margin: 10px;
+}
+.storep img{
+	width: 200px;
+	height: 180px;
+	object-fit: contain;
+}
+.storep p{
+	margin: 5px;
+	text-align: center;
+}
+.pr{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+}
+.minav{
+	text-align: center;
+
+}
+.minav a{
+	padding: 0 10%;
+}
+.minav a:hover{
+	color:white;
+}
+.useracc{
+	width: 20%;
+	height: auto;
+	margin: 0 40%;
+}
+.ach{
+	text-align: center;
+}
+.active{
+	border-bottom: white solid;
 }
