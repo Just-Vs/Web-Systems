@@ -1,18 +1,11 @@
 {% extends "template.html" %}
 {% block content %}
+{% for s in store %}
 <div class="storep">
-  <img src="/static/tree-736885__480.jpeg" alt="tree">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  <a class="pr">price</a>
+  <h2>{{ s.item }}</h2>
+  <p>{{ s.description }}</p>
+  <a class="pr">{{s.price}}</a>
 </div>
-<div class="storep">
-  <img src="/static/tree-736885__480.jpeg" alt="tree">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  <a class="pr">price</a>
-</div>
-<div class="storep">
-  <img src="/static/tree-736885__480.jpeg" alt="tree">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  <a class="pr">price</a>
-</div>
+{% endfor %}
+
 {% endblock content %}

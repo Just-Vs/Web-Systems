@@ -1,7 +1,7 @@
 {% extends "template.html" %}
 {% block content %}
 <div class="cnt">
-  <form class="form-class dv" action="index.html" method="POST">
+  <form class="form-class dv" action="" method="POST">
     <h3 class="text-info">Register</h3>
     {{ form.hidden_tag() }}
     <div class="form-data">
@@ -20,5 +20,10 @@
       {{ form.submit(class="btn btn-dark bt") }}
     </div>
   </form>
+  <br>
+  {% for user in our_users %}
+    {{ user.name }}
+    {{ user.email }}
+    {% endfor %}
 </div>
 {% endblock content %}
